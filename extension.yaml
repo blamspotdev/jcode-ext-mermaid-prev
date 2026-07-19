@@ -1,0 +1,50 @@
+id: jcode.ext.mermaidprev
+name: Mermaid Preview
+version: 0.1.0
+type: app
+publisher: jcode
+authors: [jcode, blamspotdev]
+description: Preview Mermaid diagrams from .mmd files and Markdown code fences — as a chart tab or a full document with inline charts.
+longDescription: >
+  Renders Mermaid diagrams (flowcharts, sequence, class, state, ER, gantt, pie,
+  git graphs and more) right inside JCode, fully offline via a bundled Mermaid
+  engine. Long-press a .mmd/.mermaid file or a Markdown file and choose
+  "Preview Mermaid Charts" for a chart-by-chart view with zoom and source
+  inspection, or "Preview Document (Inline Charts)" to read the whole Markdown
+  document with every mermaid fence rendered in place. The preview follows the
+  active editor tab and refreshes automatically when files are saved. With this
+  extension installed, JCode's built-in Markdown preview also renders mermaid
+  fences inline instead of showing them as plain code.
+supportedArches: [arm64]
+api:
+  minApiVersion: 1
+  capabilities: [fs, workbench]
+requires:
+  extensions: []
+  sdks: []
+suggests: {}
+contributes:
+  editorContextActions:
+    - id: charts
+      label: Preview Mermaid Charts
+      icon: preview
+      fileExtensions: [mmd, mermaid, md, markdown]
+    - id: document
+      label: Preview Document (Inline Charts)
+      icon: eye
+      fileExtensions: [md, markdown]
+
+# --- header fields merged from extension.jehm ---
+shortDescription: Inline and tab previews for Mermaid diagrams in .mmd files and Markdown fences — fully offline.
+minJCodeVersion: 1.0.0
+targetJCodeVersion: 1.3.4
+category: Visualization
+subcategory: Diagrams
+images:
+  icon: media/icon.png
+  samples: []
+  walkthrough: []
+entry:
+  manifest: extension.yaml
+  ui: www/index.html
+  libs: []
