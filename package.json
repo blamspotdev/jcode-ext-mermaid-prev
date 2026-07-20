@@ -1,6 +1,6 @@
 {
   "name": "jcode-ext-mermaid-prev",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "description": "Mermaid Preview extension for JCode — built with esbuild + TypeScript.",
   "scripts": {
