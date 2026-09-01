@@ -1,6 +1,6 @@
 id: jcode.ext.mermaidprev
 name: Mermaid Preview
-version: 0.2.2
+version: 0.2.3
 type: app
 publisher: jcode
 authors: [jcode, blamspotdev]
